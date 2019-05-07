@@ -59,14 +59,18 @@ main {
 
   &>p {
     width: 80vh;
-    padding: 10px;
+    padding: 5px;
     background: whitesmoke;
     border-radius: 5px;
     font-weight: 300;
+
+    & a:hover {
+      outline: none;
+    }
   }
 
   &>* {
-    margin: 5px 0;
+    margin: 2px 0;
   }
 }
 
