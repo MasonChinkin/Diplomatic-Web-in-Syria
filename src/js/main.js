@@ -15,8 +15,8 @@ export default function () {
 
   const simulation = d3.forceSimulation()
     .force('link', d3.forceLink().id(d => d.id))
-    .force('charge', d3.forceManyBody().strength(-2000))
-    .force('center', d3.forceCenter(w / 2, h * 0.45))
+    .force('charge', d3.forceManyBody().strength(-1600))
+    .force('center', d3.forceCenter(w / 2, h * 0.41))
 
   d3.json('data/syriaNetwork.json').then(data => {
     const path = svg.append('g')
